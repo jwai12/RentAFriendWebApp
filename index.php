@@ -42,6 +42,8 @@
             <a href="profiles.html">Profiles</a>
             <a href="reviews.html">Reviews</a>
             <a href="terms.html">Terms</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    		<i class="fa fa-bars"></i>
         </div>
 
         <script language="javascript">
