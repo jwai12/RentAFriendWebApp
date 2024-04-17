@@ -39,7 +39,7 @@
             <a href="index.php">Home</a>
             <a href="FAQ.html">FAQ</a>
             <a href="match.html">Find Match</a>
-            <a href="profiles.html">Profiles</a>
+            <a href="profiles.php">Profiles</a>
             <a href="reviews.html">Reviews</a>
             <a href="terms.html">Terms</a>
         </div>
@@ -97,7 +97,7 @@
 							<li><a href="FAQ.html">FAQ</a></li>
 							<li><a href="Contact.html">Contact</a></li>
 							<li><a href="match.html">Find A Match</a></li>
-							<li><a href="profiles.html">Profiles</a></li>
+							<li><a href="profiles.php">Profiles</a></li>
 							<li><a href="reviews.html">Reviews</a></li>
 					</ul>
 			</div>
