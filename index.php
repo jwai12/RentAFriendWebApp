@@ -36,15 +36,18 @@
         </header>
         
         <div class="navbar">
-            <a href="index.html">Home</a>
+            <a href="index.php">Home</a>
             <a href="FAQ.html">FAQ</a>
             <a href="match.html">Find Match</a>
-            <a href="profiles.html">Profiles</a>
+            <a href="profiles.php">Profiles</a>
             <a href="reviews.html">Reviews</a>
             <a href="terms.html">Terms</a>
+			<a href="javascript:void(0);" class="icon" onclick="displayMenu()">
+    		<i class="fa fa-bars"></i>
         </div>
 
         <script language="javascript">
+			// slideshow functionality
             images = ["im1.jpg", "im2.jpg","im3.jpg","im4.jpg","im5.jpg","im6.jpg",
             "im7.jpg","im8.jpg","im9.jpg","im10.jpg","im11.jpg","im12.jpg","im13.jpg",
             "im14.jpg","im15.jpg","im16.jpg","im17.jpg","im18.jpg","im19.jpg", "im20.jpg"];
@@ -56,7 +59,7 @@
             function slideShow()
             {
                 $("#slide img").fadeOut(2000,nextSlide);
-    }
+    		}
            function nextSlide()
             {
                 imgIndex++;
@@ -64,6 +67,17 @@
                 $("#slide img").attr("src","images/"+images[imgIndex]);
                 $("#slide img").fadeIn(2000,slideShow);
             }
+
+			// navbar resposivity
+			function displayMenu() {
+			  var x = document.getElementById("navbar");
+			  if (x.className === "navbar") {
+			    x.className += " responsive";
+			  } else {
+			    x.className = "navbar";
+			  }
+			}
+			
         </script>
             <div class="row">
                 <div class="column left">
@@ -97,7 +111,7 @@
 							<li><a href="FAQ.html">FAQ</a></li>
 							<li><a href="Contact.html">Contact</a></li>
 							<li><a href="match.html">Find A Match</a></li>
-							<li><a href="profiles.html">Profiles</a></li>
+							<li><a href="profiles.php">Profiles</a></li>
 							<li><a href="reviews.html">Reviews</a></li>
 					</ul>
 			</div>

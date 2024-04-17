@@ -98,8 +98,6 @@ footer {
     color: #341E33;
 }
 .navbar a{
-    /* border: solid 1px #341E33;
-    border-radius: 10px; */
     color: #341E33;
     text-decoration: none; 
     padding-left: 2%;
@@ -109,6 +107,35 @@ footer {
 .navbar a:hover{
     background-color: #C57DB2;
     color: black;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a {
+        display: none;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;
+    }
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
 
 .quiz {
