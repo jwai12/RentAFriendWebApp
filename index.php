@@ -48,9 +48,9 @@
 
         <script language="javascript">
 			// slideshow functionality
-            images = ["im1.jpg", "im2.jpg","im3.jpg","im4.jpg","im5.jpg","im6.jpg",
-            "im7.jpg","im8.jpg","im9.jpg","im10.jpg","im11.jpg","im12.jpg","im13.jpg",
-            "im14.jpg","im15.jpg","im16.jpg","im17.jpg","im18.jpg","im19.jpg", "im20.jpg"];
+            images = ["images/im1.jpg", "images/im2.jpg","images/im3.jpg","images/im4.jpg","images/im5.jpg","images/im6.jpg",
+            "images/im7.jpg","images/im8.jpg","images/im9.jpg","images/im10.jpg","images/im11.jpg","images/im12.jpg","images/im13.jpg",
+            "images/im14.jpg","images/im15.jpg","images/im16.jpg","images/im17.jpg","images/im18.jpg","images/im19.jpg", "images/im20.jpg"];
             var imgIndex=0;
             
             $(document).ready(function() {
