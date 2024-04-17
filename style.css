@@ -5,34 +5,96 @@
 body {
     width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #000;
+    color: #341E33;
     margin: 0;
     padding: 0;
-    background-image: url("background.jpeg");
+    background: linear-gradient(to bottom right, #C57DB2,#F7C7DB,#C57DB2); /* Adjust colors as needed */
+    /* Other styles for the body */
 }
 
 /* HEADER AND NAVIGATION */
 header {
     width: 100%;
     display: flex;
-    padding: 10px 20px;
+    margin: 0;
+    padding: 0;
     background-color: #D7C0D0;
     
 }
 
+
+/* -------NEW NAV-------- */
+.navbar {
+        overflow: hidden;
+        background-color: #EBB5D1;
+        border: solid 4px #341E33;
+        color: #341E33;
+        padding: 2px;
+      }
+      
+      .navbar a {
+        float: left;
+        display: block;
+        color: #341E33;
+        text-align: center;
+        padding: 14px 16px; 
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .navbar a:hover {
+        background-color: #C57DB2;;
+        color: white;
+      }
+      
+      .navbar a.active {
+        background-color: #341E33;;
+        color: white;
+      }
+      
+      .navbar .icon {
+        display: none;
+      }
+      
+      @media screen and (max-width: 600px) {
+        .navbar a:not(:first-child) {display: none;}
+        .navbar a.icon {
+          float: right;
+          display: block;
+        }
+      }
+      
+      @media screen and (max-width: 600px) {
+        .navbar.responsive {position: relative;}
+        .navbar.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .navbar.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+      }
+
+/* END OF NEW NAV  */
+
+
+
 footer {
         background-color: #EBB5D1;
+        border-top: solid 4px #341E33;
         color: #000;
-        padding: 20px 0;
+        margin: 0;
+        padding: 0;
         text-align: center;
+        padding-bottom: 2%;
 }
     
     .footer-copyright {
-        max-width: 100%;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+       
+        text-align: center;
     }
     
     
@@ -78,32 +140,6 @@ footer {
     padding: 2%;
 }
 
-
-.navbar {
-    overflow: hidden;
-    background-color: #EBB5D1;
-    border: solid 4px #C57DB2;
-    width: 100%;
-    margin: auto;
-    float: left;
-    text-align: center;
-    padding: 14px 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #341E33;
-}
-.navbar a{
-    /* border: solid 1px #341E33;
-    border-radius: 10px; */
-    color: #341E33;
-    text-decoration: none; 
-    padding-left: 2%;
-    padding-right: 2%;
-    font-size: 20px;
-}
-.navbar a:hover{
-    background-color: #C57DB2;
-    color: black;
-}
 
 .quiz {
     margin-left: 10px;
