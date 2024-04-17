@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Rent-A-Friend | Checkout</title>
+        <style>
+            div.content {
+                margin: 5vw;    
+            }
+        </style>
+        <script>
+            function validate() {
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var card = document.getElementById("card").value;
+                var terms = document.getElementById("terms").checked;
+
+                if (name == "") {
+                    alert("Name must be filled out");
+                    return false;
+                }
+                if (email == "") {
+                    alert("Email must be filled out");
+                    return false;
+                } else if (!email.includes("@")){
+                    alert("Invalid email");
+                    return false;          
+                }
+                if (card == "") {
+                    alert("Card number must be filled out");
+                    return false;
+                } else if (card.length < 16) {
+                    alert("Card number must be at least 16 numbers");
+                    return false;
+                } else if (isNaN(parseInt(card))) {
+                    alert("Card number must be all numbers");
+                    return false;
+                } if (!terms) {
+                    alert("Must agree to terms and conditions");
+                    return false;
+                } 
+                
+                window.location.href = "https://mbeast01.github.io/Rent-A-Friend/thanks.html";
+            }
+        </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Logo" ></a>
+        </div>
+        <div class="title">
+            <h1>Rent-A-Friend</h1>
+        </div>
+    </header>
+        
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="FAQ.html">FAQ</a>
+        <a href="match.html">Find Match</a>
+        <a href="profiles.html">Profiles</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="terms.html">Terms</a>
+      </div>
+      <div class="content">  
+              <h2>Check out now!</h2>  
+        
+              <p>Ready to get started? Fill out the contact information, with your desired date and choice of friend. One of our representatives will reach out to you within 1-2 business days.</p> 
+              <form>
+                <label for="name">Name:</label>      
+                <input type="text" id="name" name="name">
+                </br></br>
+        
+                <label for="email">Email:</label>      
+                <input type="text" id="email" name="email">
+                </br></br>
+        
+                <label for="card">Card number:</label>      
+                <input type="text" id="card" name="card">   
+                </br></br>
+                
+                <label for="expiration">Expiration date:</label>
+                <p style="display:inline">Month: </p>
+                <select id="expiration" name="expiration" value="1"required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                </select>
+                <p style="display:inline">Year: </p>
+                <input type="number" min="2024" max="2099" step="1" value="2024" required/>
+                </br></br>        
+                <label for="date">Desired date: </label>      
+                <input type="date" id="date" name="date" value="2025-01-01">
+                </br></br>
+                      
+                <label for="time">Choose a time for your meeting:</label>
+                <input type="time" id="time" name="time" value="00:00" required/>
+                </br></br>
+                      
+                <label for="friend">Choose your friend: </label>
+                <select id="friend" name="friend" required>
+                        <option value="Belle">Belle</option>
+                        <option value="Jace">Jace</option>
+                        <option value="Jordan">Jordan</option>
+                        <option value="MG">MG</option>
+                </select>
+                </br></br></br>
+        
+                <a href="https://mbeast01.github.io/Rent-A-Friend/terms.html" target="_blank">Read our terms and conditions here</a> 
+                </br></br>
+                      
+                <label for="terms">I have read and agree to the terms and conditions.</label>
+                <input type="checkbox" id="terms" name="terms">
+                </br></br>
+                      
+                <div class="button>
+                    <form method="post" action="#">
+                            <input type="button" value="Check out" onclick="validate()">
+                    </form> 
+                </div>
+        </body>
+</html>
+

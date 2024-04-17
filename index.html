@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+       
+        <style type="text/css">
+            #slides-wrapper{box-sizing: border-box;max-width: 700px; margin: 5vh 10vw 5vh; justify-content: center;}
+            .slide{display: flex; justify-content: right;box-sizing: content-box; width:70%;}
+           
+            #columns{box-sizing: border-box; }
+            h2 {
+                width: 70%;
+                margin: auto;
+            }
+            p {
+                width: 60%;
+                margin: auto;
+            }
+        </style>
+
+        <title>Home Page</title>
+    </head>
+    <body>
+
+        <header>
+                <div class="logo">
+                    <a href="index.html"><img src="logo.png" alt="Logo" ></a>
+                </div>
+                </div>
+                <div class="title">
+                    <h1>Rent-A-Friend</h1>
+                </div>
+        </header>
+        
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="match.html">Find Match</a>
+            <a href="profiles.html">Profiles</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="terms.html">Terms</a>
+        </div>
+
+        <script language="javascript">
+            images = ["im1.jpg", "im2.jpg","im3.jpg","im4.jpg","im5.jpg","im6.jpg",
+            "im7.jpg","im8.jpg","im9.jpg","im10.jpg","im11.jpg","im12.jpg","im13.jpg",
+            "im14.jpg","im15.jpg","im16.jpg","im17.jpg","im18.jpg","im19.jpg", "im20.jpg"];
+            var imgIndex=0;
+            
+            $(document).ready(function() {
+                window.onload=slideShow()   
+            })
+            function slideShow()
+            {
+                $("#slide img").fadeOut(2000,nextSlide);
+    }
+           function nextSlide()
+            {
+                imgIndex++;
+                imgIndex= imgIndex== images.length? 0: imgIndex;
+                $("#slide img").attr("src","images/"+images[imgIndex]);
+                $("#slide img").fadeIn(2000,slideShow);
+            }
+        </script>
+            <div class="row">
+                <div class="column left">
+                </div>
+                <div class="column middle" style="padding: 1px;">
+                    <h2>Welcome</h2>
+                    <p>Congratulations and welcome to Rent-a-Friend, where we've perfected 
+                        the art of commodifying and distilling the essence of genuine human 
+                        connection into a transactional experience. Because why bother with 
+                        those pesky emotions and genuine connections when you can simply swipe, 
+                        rent, and return your friends like a library book? Rest assured, our 
+                        friendships are as genuine as a politician's promise. So, grab your 
+                        wallet and let's pretend to care about each other for an hourly fee. 
+                        Cheers to the epitome of authentic human interaction!</p>
+                </div>
+            </div>
+        
+        <div id='slides-wrapper'>
+            <div id='slide'>
+                <img src="images/im1.jpg" style="width: 100%; height: auto; display: flex; align-items: right; justify-content: center;"/>
+            </div>
+        </div>  
+        
+         </body>
+    </body>
+</html>

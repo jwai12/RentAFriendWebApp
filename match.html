@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rent-A-Friend | Matching Survey</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .question {
+            font-weight: bold;
+            font-size: 18px;
+            width: 60%;
+            background-color: #D7C0D0;
+            color: #341E33;
+            border: solid 4px #C57DB2;
+            padding: 10px;      
+            border-radius: 10px;
+        }
+
+        #quiz {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+        }
+
+        #quizForm {
+            margin-bottom: 20px;
+        }
+
+        label {
+            width: 70%;
+            background-color:#EBB5D1;
+            color: #341E33;
+            border: solid 4px #C57DB2;
+            margin-left: 10%;
+            padding: 10px;
+            border-radius: 10px;
+            display: block;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            margin-top: 37px;
+            background-color: #F7C7DB;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 20px 20px;
+            border: solid 4px #C57DB2;
+            border-radius: 40px;
+            cursor: pointer;
+            margin-left: 68%;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2E254E;
+        }
+
+        #perfect_match {
+            width: 40%;
+            background-color:#341E33;
+            color: #341E33;
+            border: solid 4px #C57DB2;
+            margin-right: 50%;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 20px;
+            color: #fff;
+            border-radius: 20px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Logo" ></a>
+        </div>
+        <div class="title">
+            <h1>Rent-A-Friend</h1>
+        </div>
+    </header>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="FAQ.html">FAQ</a>
+        <a href="match.html">Find Match</a>
+        <a href="profiles.html">Profiles</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="terms.html">Terms</a>
+    </div>
+    <h2>Meet Your Match!</h2>
+
+    <div id="quiz">
+        <form id="quizForm">
+        <p class="question">Question 1: How do you conquer boredom?</p>
+        <label>
+            <input type="radio" name="answer1" value="jordan">Mastering the art of eye-rolling <br>
+            <input type="radio" name="answer1" value="belle">Crafting sarcastic tweets <br>
+            <input type="radio" name="answer1" value="jace">Plotting world domination <br>
+            <input type="radio" name="answer1" value="MG">Perfecting the art of binge-watching
+            </label>
+            <p class="question">Question 2: Your response to drama is:</p>
+            <label>
+            <input type="radio" name="answer2" value="jordan">Observe from a safe distance <br>
+            <input type="radio" name="answer2" value="belle">Crafting memes in real-time <br>
+            <input type="radio" name="answer2" value="jace">Offer unsolicited advice <br>
+            <input type="radio" name="answer2" value="MG">Channel your inner drama llama 
+            </label>
+            <p class="question">Question 3: What's your go-to reaction when someone says they don't like your vibe?</p>
+
+            <label>
+            <input type="radio" name="answer3" value="jordan">"Cool, less competition for fabulousness." <br>
+            <input type="radio" name="answer3" value="belle">"Guess they can't handle the glamour." <br>
+            <input type="radio" name="answer3" value="jace">"I wasn't offering it to them anyway." <br>
+            <input type="radio" name="answer3" value="MG">"They clearly need an upgrade in taste."
+            </label>
+            <p class="question">Question 4: How do you respond to unsolicited fashion advice?</p>
+
+        <label>
+            <input type="radio" name="answer4" value="jordan">"Thanks, but my closet's on a higher level." <br>
+            <input type="radio" name="answer4" value="belle">"I didn't realize I hired a fashion critic." <br>
+            <input type="radio" name="answer4" value="jace">"My style is an avant-garde masterpiece, darling." <br>
+            <input type="radio" name="answer4" value="MG">"I don't follow trends, I set them." 
+        </label>
+            <p class="question">Question 5: Your mantra for dealing with haters is:</p>
+        <label>
+    
+            <input type="radio" name="answer5" value="jordan">"Haters gonna hate; I'm gonna slay." <br>
+            <input type="radio" name="answer5" value="belle">"Drown them in glitter and walk away." <br>
+            <input type="radio" name="answer5" value="jace">"Hate is just misguided admiration." <br>
+            <input type="radio" name="answer5" value="MG">"I'm too fabulous for hate to touch me."
+        </label>
+            <p class="question">Question 6: Your response to a mediocre compliment is:</p>
+        <label>
+       
+            <input type="radio" name="answer6" value="jordan">"Thanks, but I prefer compliments that match my slay level." <br>
+            <input type="radio" name="answer6" value="belle">"Mediocre compliments are for mere mortals; I deserve more." <br>
+            <input type="radio" name="answer6" value="jace">"My fabulousness deserves a standing ovation, not mediocrity." <br>
+            <input type="radio" name="answer6" value="MG">"I'll add it to my collection of compliments from the uninspired."
+        </label>
+            <p class="question">Question 7: How do you react when someone borrows your snacks without asking?</p>
+
+        <label>
+            <input type="radio" name="answer7" value="jordan">Lecture them on snack etiquette <br>
+            <input type="radio" name="answer7" value="belle">Launch a covert snack-retrieval mission <br>
+            <input type="radio" name="answer7" value="jace">Plot revenge involving glitter and confetti <br>
+            <input type="radio" name="answer7" value="MG">"Ignore it; snacks are meant to be shared (or stolen) 
+        </label>
+            <p class="question">Question 8: Your response to a technology glitch is to:</p>
+
+        <label>
+            <input type="radio" name="answer8" value="jordan">Panic and call IT, loudly <br>
+            <input type="radio" name="answer8" value="belle">Blame it on Mercury retrograde <br>
+            <input type="radio" name="answer8" value="jace">Fix it with the ancient art of percussive maintenance (a.k.a. hitting it) <br>
+            <input type="radio" name="answer8" value="MG">Pretend to be a robot until it's fixed 
+        </label>
+            <p class="question">Question 9: What's your approach to making your bed in the morning?</p>
+
+        <label>
+            <input type="radio" name="answer9" value="jordan">It's a daily ritual; hospital corners and all! <br>
+            <input type="radio" name="answer9" value="belle">I straighten the pillows... sometimes. <br>
+            <input type="radio" name="answer9" value="jace">Making the bed is overrated; I'm embracing the "rumpled chic" look. <br>
+            <input type="radio" name="answer9" value="MG">Bed-making? I'll consider it a workout if I ever get around to it.
+        </label>
+            <p class="question">Question 10: What's your snack of choice during a movie night?</p>
+
+        <label>
+            <input type="radio" name="answer10" value="jordan">Gourmet popcorn with unique seasoning. <br>
+            <input type="radio" name="answer10" value="belle">Classic buttered popcorn or maybe some nachos. <br>
+            <input type="radio" name="answer10" value="jace">A variety of snacks; can't choose just one. <br>
+            <input type="radio" name="answer10" value="MG">Movie night? I'm here for the plot, not the snacks.
+        </label>
+            <input type="submit" value="Get my perfect match!"/>
+            <div id="perfect_match">Your perfect match is: </div>
+        </form>
+    </div>
+
+<script> 
+
+document.getElementById('quizForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevents the default form submission
+
+    // array to handle answers, where each index is a name from a question (ex: answer1),
+    // and each value is the corresponding name (ex: jordan)
+    var answers = {};
+    var questions = document.querySelectorAll('#quiz input[type="radio"]:checked');
+
+    // goes through each question and puts the correct value of the current
+    // answer into the answer array
+    questions.forEach(function(question) {
+        var name = question.name;
+        var value = question.value;
+        answers[name] = value;
+    });
+
+    var jordan = 0;
+    var belle = 0;
+    var jace = 0;
+    var MG = 0;
+
+    for (i = 1; i < 11; i++) {
+        var namestring = "answer" + i;
+        if (answers[namestring] == "jordan") {
+            jordan++;
+        } else if (answers[namestring] == "belle") {
+            belle++;
+        } else if (answers[namestring] == "jace") {
+            jace++;
+        } else if (answers[namestring] == "MG") {
+            MG++;
+        }
+    }
+
+    // figuring out the most questions matched to one person
+    var most_questions = Math.max(jordan, belle, jace, MG);
+
+
+    console.log("jordan: " + jordan);
+    console.log("belle: " + belle);
+    console.log("jace: " + jace);
+    console.log("MG: " + MG);
+
+    // will store the name of the person with whom the quiz taker is most compatible
+    var compatibility_match;
+
+    console.log("most questions: " + most_questions);
+
+    // note: if the most questions matched to one person is the same for two people,
+    // the first person in the order of if statements will be selected as the compatability
+    // match
+    if (jordan == most_questions) {
+        compatibility_match = "Jordan";
+    } 
+    
+    if (belle == most_questions) {
+        console.log("slay");
+        compatibility_match = "Belle";
+        console.log(compatibility_match);
+    }
+    if (jace == most_questions) {
+        compatibility_match = "Jace";
+    }
+        if (MG == most_questions) {
+        compatibility_match = "MG";
+    }
+
+    console.log("compatability match: " + compatibility_match);
+
+
+
+    document.getElementById("perfect_match").innerText = "Your perfect match is: " + compatibility_match;
+
+    // Do something with the answers (e.g., display them)
+    console.log('Quiz Answers:', answers);
+
+    console.log("Your perfect match is: " + compatibility_match);
+
+    // resets the form
+    this.reset();
+});
+    
+</script>
+</body>
+</html>
