@@ -15,8 +15,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Rent-A-Friend | Profiles</title> 
+    <title>Your Title</title>
     <style>
         .item {
             display: flex;
@@ -31,31 +30,9 @@
         .info {
             flex-grow: 1;
         }
-        div.button {
-            margin-left: 10vw;
-            margin-top: 2vw;
-            margin-bottom: 3vw;
-        }
     </style>
 </head>
 <body>
-        <header>
-                <div class="logo">
-                    <a href="index.html"><img src="logo.png" alt="Logo" ></a>
-                </div>
-                <div class="title">
-                    <h1>Rent-A-Friend</h1>
-                </div>
-        </header>
-        
-        <div class="navbar">
-                <a href="index.html">Home</a>
-                <a href="FAQ.html">FAQ</a>
-                <a href="match.html">Find Match</a>
-                <a href="profiles.php">Profiles</a>
-                <a href="reviews.html">Reviews</a>
-                <a href="terms.html">Terms</a>
-        </div>
     <?php
         // getting menu items from the menu table
         $sql = "SELECT * FROM information";
@@ -86,27 +63,5 @@
         // close database connection
         $conn->close();
     ?>
-
-    <div class="button">
-        <form action="https://mbeast01.github.io/Rent-A-Friend/checkout.html">
-            <input type="submit" value="Rent now!"/>
-        </form>
-    </div>
-</div>
-<footer>
-        <div class="footer-copyright">
-                <p>&copy; 2024 Rent-A-Friend. All rights reserved.</p>
-        </div>
-        <div class="footer-links" >
-                <ul>
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="FAQ.html">FAQ</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
-                        <li><a href="match.html">Find A Match</a></li>
-                        <li><a href="profiles.html">Profiles</a></li>
-                        <li><a href="reviews.html">Reviews</a></li>
-                </ul>
-        </div>
-</footer>
 </body>
 </html>
