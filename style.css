@@ -92,8 +92,6 @@ footer {
     color: #341E33;
 }
 .navbar a{
-    /* border: solid 1px #341E33;
-    border-radius: 10px; */
     color: #341E33;
     text-decoration: none; 
     padding-left: 2%;
@@ -103,6 +101,10 @@ footer {
 .navbar a:hover{
     background-color: #C57DB2;
     color: black;
+}
+
+.navbar .icon {
+  display: none;
 }
 
 .quiz {
