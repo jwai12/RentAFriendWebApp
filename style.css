@@ -5,34 +5,36 @@
 body {
     width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #000;
+    color: #341E33;
     margin: 0;
     padding: 0;
-    background-image: url("background.jpeg");
+    background: linear-gradient(to bottom right, #C57DB2,#F7C7DB,#C57DB2); /* Adjust colors as needed */
+    /* Other styles for the body */
 }
 
 /* HEADER AND NAVIGATION */
 header {
     width: 100%;
     display: flex;
-    padding: 10px 20px;
+    margin: 0;
+    padding: 0;
     background-color: #D7C0D0;
     
 }
 
 footer {
         background-color: #EBB5D1;
+        border-top: solid 4px #341E33;
         color: #000;
-        padding: 20px 0;
+        margin: 0;
+        padding: 0;
         text-align: center;
+        padding-bottom: 2%;
 }
     
     .footer-copyright {
-        max-width: 100%;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+       
+        text-align: center;
     }
     
     
@@ -82,12 +84,16 @@ footer {
 .navbar {
     overflow: hidden;
     background-color: #EBB5D1;
-    border: solid 4px #C57DB2;
+    border: solid 4px #341E33;
     width: 100%;
     margin: auto;
+    margin-left: 0;
+    margin-right: 0;
     float: left;
     text-align: center;
     padding: 14px 16px;
+    padding-right: 0;
+    padding-left: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #341E33;
 }
