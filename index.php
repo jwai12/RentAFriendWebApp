@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
        
         <style type="text/css">
@@ -35,16 +36,18 @@
                 </div>
         </header>
         
-        <div class="navbar">
-            <a href="index.php">Home</a>
-            <a href="FAQ.html">FAQ</a>
-            <a href="match.html">Find Match</a>
-            <a href="profiles.php">Profiles</a>
-            <a href="reviews.html">Reviews</a>
-            <a href="terms.html">Terms</a>
-			<a href="javascript:void(0);" class="icon" onclick="displayMenu()">
-    		<i class="fa fa-bars"></i>
-        </div>
+        <div class="navbar" id="myTopnav">
+        <a href="index.php" class = "active" >Home</a>
+        <a href="FAQ.html">FAQ</a>
+        <a href="match.html">Find Match</a>
+        <a href="profiles.html">Profiles</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="terms.html" >Terms</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+     </div>
+
 
         <script language="javascript">
 			// slideshow functionality
@@ -116,5 +119,15 @@
 					</ul>
 			</div>
 	</footer>
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myTopnav");
+                  if (x.className === "navbar") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "navbar";
+                  }
+                }
+                </script>
     </body>
 </html>

@@ -3,6 +3,7 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
     <title>Rent-A-Friend | Frequently Asked Questions</title>
 </head>
@@ -16,14 +17,17 @@
                 </div>
         </header>
 
-    <div class="navbar">
-        <a href="index.php">Home</a>
-        <a href="FAQ.html">FAQ</a>
-        <a href="match.html">Find Match</a>
-        <a href="profiles.php">Profiles</a>
-        <a href="reviews.html">Reviews</a>
-        <a href="terms.html">Terms</a>
-      </div>
+        <div class="navbar" id="myTopnav">
+                <a href="index.php" >Home</a>
+                <a href="FAQ.html" class = "active">FAQ</a>
+                <a href="match.html">Find Match</a>
+                <a href="profiles.html">Profiles</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="terms.html">Terms</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+             </div>
 
         <h2 class="FAQ">FAQ: </h2>
         <div class="QApair">
@@ -66,22 +70,32 @@
             <p class="answer" > A: Of course! We're not in the business of breaking laws or hearts.
             Our service is as legit as your grandma's secret cookie recipe.</p>
         </div>
-
-        <footer>
-                <div class="footer-copyright">
-                        <p>&copy; 2024 Rent-A-Friend. All rights reserved.</p>
-                </div>
-                <div class="footer-links" >
-                        <ul>
-                                <li><a href="index.php">Home</a></li>
-                                <li><a href="FAQ.html">FAQ</a></li>
-                                <li><a href="Contact.html">Contact</a></li>
-                                <li><a href="match.html">Find A Match</a></li>
-                                <li><a href="profiles.html">Profiles</a></li>
-                                <li><a href="reviews.html">Reviews</a></li>
-                        </ul>
-                </div>
-        </footer>
+        
+<footer>
+                        <div class="footer-copyright">
+                                <p>&copy; 2024 Rent-A-Friend. All rights reserved.</p>
+                        </div>
+                        <div class="footer-links" >
+                                <ul>
+                                        <li><a href="index.php">Home</a></li>
+                                        <li><a href="FAQ.html">FAQ</a></li>
+                                        <li><a href="Contact.html">Contact</a></li>
+                                        <li><a href="match.html">Find A Match</a></li>
+                                        <li><a href="profiles.html">Profiles</a></li>
+                                        <li><a href="reviews.html">Reviews</a></li>
+                                </ul>
+                        </div>
+                </footer>
+                <script>
+                        function myFunction() {
+                          var x = document.getElementById("myTopnav");
+                          if (x.className === "navbar") {
+                            x.className += " responsive";
+                          } else {
+                            x.className = "navbar";
+                          }
+                        }
+                </script>
 
 </body>
 </html>

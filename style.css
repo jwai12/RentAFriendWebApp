@@ -22,6 +22,66 @@ header {
     
 }
 
+
+/* -------NEW NAV-------- */
+.navbar {
+        overflow: hidden;
+        background-color: #EBB5D1;
+        border: solid 4px #341E33;
+        color: #341E33;
+        padding: 2px;
+      }
+      
+      .navbar a {
+        float: left;
+        display: block;
+        color: #341E33;
+        text-align: center;
+        padding: 14px 16px; 
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .navbar a:hover {
+        background-color: #C57DB2;;
+        color: white;
+      }
+      
+      .navbar a.active {
+        background-color: #341E33;;
+        color: white;
+      }
+      
+      .navbar .icon {
+        display: none;
+      }
+      
+      @media screen and (max-width: 600px) {
+        .navbar a:not(:first-child) {display: none;}
+        .navbar a.icon {
+          float: right;
+          display: block;
+        }
+      }
+      
+      @media screen and (max-width: 600px) {
+        .navbar.responsive {position: relative;}
+        .navbar.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .navbar.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+      }
+
+/* END OF NEW NAV  */
+
+
+
 footer {
         background-color: #EBB5D1;
         border-top: solid 4px #341E33;
@@ -137,6 +197,7 @@ footer {
         text-align: left;
     }
 }
+
 
 .quiz {
     margin-left: 10px;
